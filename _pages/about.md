@@ -30,11 +30,11 @@ experiences:
   enabled: true
   content:
     - title: MarsCode CodeAI Intern
-      date: 2024.10 - now
+      date: 2024.10 - 2025.6
       company: ByteDance
       description_list:
         - Conducted research on commit message generation and commit message quality evaluation.
-        - Currently researching reinforcement learning to enhance LLM's reasoning capabilities, such as mathematical reasoning, competitive programming contest test generation, and tool-interative reasoning. Collaborating with [Zexiong Ma](https://scholar.google.com/citations?user=jmZifrkAAAAJ&hl=en) and mentored by Bo Jiang.
+        - researched reinforcement learning to enhance LLM's reasoning capabilities, such as mathematical reasoning, competitive programming contest test generation, and tool-interative reasoning. Collaborating with [Zexiong Ma](https://scholar.google.com/citations?user=jmZifrkAAAAJ&hl=en) and mentored by Bo Jiang.
     - title: Framework Intern
       date: 2024.3 - 2024.9
       company: Oneflow
