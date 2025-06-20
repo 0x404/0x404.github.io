@@ -33,8 +33,8 @@ experiences:
       date: 2024.10 - 2025.6
       company: ByteDance
       description_list:
-        - Conducted research on commit message generation and commit message quality evaluation.
-        - researched reinforcement learning to enhance LLM's reasoning capabilities, such as mathematical reasoning, competitive programming contest test generation, and tool-interative reasoning. Collaborating with [Zexiong Ma](https://scholar.google.com/citations?user=jmZifrkAAAAJ&hl=en) and mentored by Bo Jiang.
+        - Conducted research on automated commit message generation and quality evaluation, with findings accepted for publication in the research track of ICSE2026.
+        - Researched RL approaches to enhance LLM's reasoning capabilities, such as mathematical reasoning, competitive programming contest test generation, and tool-interactive reasoning. Collaborating with [Zexiong Ma](https://scholar.google.com/citations?user=jmZifrkAAAAJ&hl=en) and mentored by Bo Jiang.
     - title: Framework Intern
       date: 2024.3 - 2024.9
       company: Oneflow
@@ -55,8 +55,8 @@ experiences:
 
 I am a second-year graduate student at the School of Computer Science and Technology at [Beijing Institute of Technology](https://english.bit.edu.cn), advised by [Prof. Yuxia Zhang](https://yuxiazhang-bit.github.io/index.html). Prior to this, I received my B.S. degree in Computer Science from the same university in 2023.
 
-My research primarily focuses on the application of LLMs to SE fields. Recently, I have concentrated on reinforcement learning (RL) approaches to enhance LLMs' reasoning capabilities, with the goal of improving their performance on automatic SE tasks such as code generation.
+My research primarily focuses on AI for Software Engineering (AI4SE). Recently, I have concentrated on reinforcement learning approaches to enhance LLMs' reasoning capabilities, with the goal of improving their performance on automatic SE tasks such as code generation.
 
-I am also interested in MLSys and enjoy building scalable systems. I had several MLSys internships and recently I've been actively contributing to the [verl](https://github.com/volcengine/verl) community. I believe RL represents a critical pathway toward AGI and it's an art of combining research and engineering.
+I am also interested in MLSys and enjoy building scalable systems. I have had several MLSys internships and recently I've been actively contributing to the [verl](https://github.com/volcengine/verl) community. I believe RL represents a critical pathway toward AGI and it's an art of combining research and engineering.
 
-Please feel free to reach out if you're interested in having a discussion :)
+Please feel free to contact me if you're interested in having a discussion :)
