@@ -30,10 +30,10 @@ experiences:
   enabled: true
   content:
     - title: MarsCode CodeAI Intern
-      date: 2024.10 - 2025.6
+      date: 2024.9 - 2025.6
       company: ByteDance
       description_list:
-        - Conducted research on automated commit message generation and quality evaluation, with findings accepted for publication in the research track of ICSE2026.
+        - Conducted research on automated commit message generation and quality evaluation, with findings accepted for publication in the research track of ICSE 2026.
         - Researched RL approaches to enhance LLM's reasoning capabilities, such as mathematical reasoning, competitive programming contest test generation, and tool-interactive reasoning. Collaborating with [Zexiong Ma](https://scholar.google.com/citations?user=jmZifrkAAAAJ&hl=en) and mentored by Bo Jiang.
     - title: Framework Intern
       date: 2024.3 - 2024.9
