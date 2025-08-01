@@ -29,6 +29,16 @@ latest_posts:
 experiences:
   enabled: true
   content:
+    - title: Top Talent Intern
+      date: 2024.8 - now
+      company: MiniMax
+      description_list:
+        - Working on foundation model's coding capabilities.
+    - title: Beidou Program Intern
+      date: 2024.6 - 2025.7
+      company: Meituan
+      description_list:
+        - Researched multi-turn conversational RL to enhance LLM's dialogue capabilities.
     - title: MarsCode CodeAI Intern
       date: 2024.9 - 2025.6
       company: ByteDance
