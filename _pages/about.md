@@ -36,7 +36,7 @@ experiences:
         - Core contributor to [MiniMax-M2](https://github.com/MiniMax-AI/MiniMax-M2)'s multilingual coding capabilities. Benefiting from environment scaling and scaffold scaling, MiniMax-M2 shows SOTA performance on Multi-SWE-bench and SWE-bench multilingual among all opensource models.
         - Working on MiniMax-M2.1 and more, stay tuned ~
     - title: Beidou Program Intern
-      date: 2024.6 - 2025.7
+      date: 2025.6 - 2025.7
       company: Meituan
       description_list:
         - Researched multi-turn conversational RL to enhance LLM's dialogue capabilities.
