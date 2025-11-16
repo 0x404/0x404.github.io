@@ -30,16 +30,17 @@ experiences:
   enabled: true
   content:
     - title: Top Talent Intern
-      date: 2024.8 - now
+      date: 2024.7 - now
       company: MiniMax
       description_list:
-        - Working on foundation model's coding capabilities.
+        - Core contributor to [MiniMax-M2](https://github.com/MiniMax-AI/MiniMax-M2)'s multilingual coding capabilities. Benefiting from environment scaling and scaffold scaling, MiniMax-M2 shows SOTA performance on Multi-SWE-bench and SWE-bench multilingual among all opensource models.
+        - Working on MiniMax-M2.1 and more, stay tuned ~
     - title: Beidou Program Intern
       date: 2024.6 - 2025.7
       company: Meituan
       description_list:
         - Researched multi-turn conversational RL to enhance LLM's dialogue capabilities.
-    - title: MarsCode CodeAI Intern
+    - title: Trae CodeAI Intern
       date: 2024.9 - 2025.6
       company: ByteDance
       description_list:
@@ -63,10 +64,10 @@ experiences:
         - Contributed to ByteDance's machine learning platform development as part of the engineering team.
 ---
 
-I am a second-year graduate student at the School of Computer Science and Technology at [Beijing Institute of Technology](https://english.bit.edu.cn), advised by [Prof. Yuxia Zhang](https://yuxiazhang-bit.github.io/index.html). Prior to this, I received my B.S. degree in Computer Science from the same university in 2023.
+I am a final-year graduate student at the School of Computer Science and Technology at [Beijing Institute of Technology](https://english.bit.edu.cn), advised by [Prof. Yuxia Zhang](https://yuxiazhang-bit.github.io/index.html). Prior to this, I received my B.S. degree in Computer Science from the same university in 2023.
 
-My research primarily focuses on AI for Software Engineering (AI4SE). Recently, I have concentrated on reinforcement learning approaches to enhance LLMs' reasoning capabilities, with the goal of improving their performance on automatic SE tasks such as code generation.
+My research primarily focuses on AI for Software Engineering (AI4SE). I am currently working at [MiniMax AI](https://www.minimax.io), where I focus on improving models' agentic coding capabilities. My recent work centers on SWE tasks (Multi-SWE-bench, SWE-bench multilingual, etc.), and I am particularly interested in improving foundation models' generalizability across different scaffolds and enabling them to better serve software engineers.
 
-I am also interested in MLSys and enjoy building scalable systems. I have had several MLSys internships and recently I've been actively contributing to the [verl](https://github.com/volcengine/verl) community. I believe RL represents a critical pathway toward AGI and it's an art of combining research and engineering.
+I am also interested in MLSys and enjoy building scalable systems. I am a contributor to the [verl](https://github.com/volcengine/verl) project, and recently I have been focusing part of my work on building MiniMax's RL infrastructure, scaling agent scaffolds for agentic RL. I believe RL represents a critical pathway toward AGI, and it's an art of combining research and engineering.
 
 Please feel free to contact me if you're interested in having a discussion :)
