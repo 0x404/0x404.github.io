@@ -33,8 +33,9 @@ experiences:
       date: 2024.7 - now
       company: MiniMax
       description_list:
+        - Working on MiniMax-M2.x and more, stay tuned ~
+        - Core contributor to improving the SWE/MSWE coding and review capabilities of [MiniMax-M2.1](https://github.com/MiniMax-AI/MiniMax-M2.1). Created the swe-review benchmark, to be open-sourced soon.
         - Core contributor to [MiniMax-M2](https://github.com/MiniMax-AI/MiniMax-M2)'s multilingual coding capabilities. Benefiting from environment scaling and scaffold scaling, MiniMax-M2 shows SOTA performance on Multi-SWE-bench and SWE-bench multilingual among all opensource models.
-        - Working on MiniMax-M2.1 and more, stay tuned ~
     - title: Beidou Program Intern
       date: 2025.6 - 2025.7
       company: Meituan
