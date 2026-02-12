@@ -35,7 +35,7 @@ experiences:
       description_list:
         - Working on MiniMax-M2.x and more, stay tuned ~
         - Core contributor to improving the SWE/MSWE coding and review capabilities of [MiniMax-M2.1](https://github.com/MiniMax-AI/MiniMax-M2.1). Created the swe-review benchmark, to be open-sourced soon.
-        - Core contributor to [MiniMax-M2](https://github.com/MiniMax-AI/MiniMax-M2)'s multilingual coding capabilities. Benefiting from environment scaling and scaffold scaling, MiniMax-M2 shows SOTA performance on Multi-SWE-bench and SWE-bench multilingual among all opensource models.
+        - Core contributor to [MiniMax-M2](https://github.com/MiniMax-AI/MiniMax-M2)'s multilingual coding capabilities. Benefiting from environment scaling and scaffold scaling, MiniMax-M2 shows SOTA performance on Multi-SWE-bench and SWE-bench multilingual among all open-source models.
     - title: Beidou Program Intern
       date: 2025.6 - 2025.7
       company: Meituan
@@ -46,7 +46,7 @@ experiences:
       company: ByteDance
       description_list:
         - Conducted research on automated commit message generation and quality evaluation, with findings accepted for publication in the research track of ICSE 2026.
-        - Researched RL approaches to enhance LLM's reasoning capabilities, such as mathematical reasoning, competitive programming contest test generation, and tool-interactive reasoning. Collaborating with [Zexiong Ma](https://scholar.google.com/citations?user=jmZifrkAAAAJ&hl=en) and mentored by Bo Jiang.
+        - Researched RL approaches to enhance LLM's reasoning capabilities, such as mathematical reasoning, competitive programming contest test generation, and tool-interactive reasoning. Collaborated with [Zexiong Ma](https://scholar.google.com/citations?user=jmZifrkAAAAJ&hl=en) and mentored by Bo Jiang.
     - title: Framework Intern
       date: 2024.3 - 2024.9
       company: Oneflow
@@ -67,8 +67,8 @@ experiences:
 
 I am a final-year graduate student at the School of Computer Science and Technology at [Beijing Institute of Technology](https://english.bit.edu.cn), advised by [Prof. Yuxia Zhang](https://yuxiazhang-bit.github.io/index.html). Prior to this, I received my B.S. degree in Computer Science from the same university in 2023.
 
-My research primarily focuses on AI for Software Engineering (AI4SE). I am currently working at [MiniMax AI](https://www.minimax.io), where I focus on improving models' agentic coding capabilities. My recent work centers on SWE tasks (Multi-SWE-bench, SWE-bench multilingual, etc.), and I am particularly interested in improving foundation models' generalizability across different scaffolds and enabling them to better serve software engineers.
+My research primarily focuses on AI for Software Engineering (AI4SE). I am currently working at [MiniMax AI](https://www.minimax.io), where I focus on improving foundation models' agentic coding capabilities and scaling verifiable environments for agentic post-training. My recent work centers on SWE tasks (Multi-SWE-bench, SWE-bench multilingual, etc.).
 
-I am also interested in MLSys and enjoy building scalable systems. I am a contributor to the [verl](https://github.com/volcengine/verl) project, and recently I have been focusing part of my work on building MiniMax's RL infrastructure, scaling agent scaffolds for agentic RL. I believe RL represents a critical pathway toward AGI, and it's an art of combining research and engineering.
+I am also interested in MLSys and enjoy building scalable systems, with experience in building RL infrastructure (e.g., [verl](https://github.com/volcengine/verl)) and scaling agent scaffolds.
 
 Please feel free to contact me if you're interested in having a discussion :)
