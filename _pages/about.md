@@ -30,7 +30,7 @@ experiences:
   enabled: true
   content:
     - title: Top Talent Intern
-      date: 2024.7 - now
+      date: 2025.7 - now
       company: MiniMax
       description_list:
         - Core contributor to [MiniMax-M2.5](https://github.com/MiniMax-AI/MiniMax-M2.5)'s agentic coding capabilities.
