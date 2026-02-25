@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Qunhong
-middle_name: 
+middle_name:
 last_name: Zeng
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal academic website of Qunhong Zeng, focusing on AI for Software Engineering, agentic coding, and LLM-based code intelligence.
@@ -54,8 +54,6 @@ bib_search: true
 
 # Dimensions
 max_width: 930px
-
-# TODO: add layout settings (single page vs. multi-page)
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org

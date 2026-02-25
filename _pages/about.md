@@ -50,7 +50,7 @@ experiences:
     - title: Framework Intern
       date: 2024.3 - 2024.9
       company: Oneflow
-      description_list: 
+      description_list:
         - Extended deep learning framework [oneflow](https://github.com/Oneflow-Inc/oneflow) compatibility beyond CUDA to diverse hardware accelerators (NPU/XPU), implementing Ascend CANN/AscendC-based operators that enabled end-to-end ResNet, GPT2, and Llama model inference/training on Ascend chips.
         - Managed framework infrastructure including Docker containerization, CI/CD, cross-platform compilation, and Manylinux-compliant Python/C++ extension packaging.
     - title: HD-Map Backend Intern

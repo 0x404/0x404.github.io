@@ -3,6 +3,10 @@
   contents:
     - name: Full Name
       value: Qunhong Zeng
+    - name: Location
+      value: Beijing, China
+    - name: Email
+      value: qunhongzeng@gmail.com
     - name: Languages
       value: Chinese, English
 
@@ -11,7 +15,73 @@
   contents:
     - title: M.S. in Computer Science
       institution: Beijing Institute of Technology, Beijing, China
-      year: 2023 - 2026
+      year: 2023 - Present
+      description:
+        - Advisor Prof. Yuxia Zhang
+        - Focus on AI for Software Engineering (AI4SE)
+        - Research on reinforcement learning for LLMs' reasoning capabilities
     - title: B.S. in Computer Science
       institution: Beijing Institute of Technology, Beijing, China
       year: 2019 - 2023
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Top Talent Intern
+      institution: MiniMax
+      year: 2025.8 - Present
+      description:
+        - Working on foundation model's coding capabilities
+    - title: Beidou Program Intern
+      institution: Meituan
+      year: 2025.6 - 2025.7
+      description:
+        - Researched multi-turn conversational RL to enhance LLM's dialogue capabilities
+    - title: MarsCode CodeAI Intern
+      institution: ByteDance
+      year: 2024.9 - 2025.6
+      description:
+        - Conducted research on automated commit message generation and quality evaluation
+        - Research accepted for publication in ICSE 2026
+        - Researched RL approaches to enhance LLM's reasoning capabilities
+    - title: Framework Intern
+      institution: Oneflow
+      year: 2024.3 - 2024.9
+      description:
+        - Extended deep learning framework compatibility to diverse hardware accelerators
+        - Implemented Ascend CANN/AscendC-based operators
+        - Managed framework infrastructure including Docker, CI/CD, and cross-platform compilation
+    - title: HD-Map Backend Intern
+      institution: Momenta
+      year: 2022.9 - 2023.1
+      description:
+        - Engineered high-performance Python/C++ extensions for HD maps algorithm library
+        - Delivered 20x performance improvement
+    - title: AI-Lab Intern
+      institution: ByteDance
+      year: 2021.12 - 2022.6
+      description:
+        - Contributed to ByteDance's machine learning platform development
+
+- title: Research Interests
+  type: nested_list
+  contents:
+    - title: AI for Software Engineering (AI4SE)
+      items:
+        - Automated code generation and commit message generation
+        - Code quality evaluation and classification
+    - title: Machine Learning Systems
+      items:
+        - Reinforcement learning for LLMs
+        - Deep learning framework development
+        - Hardware accelerator optimization
+
+- title: Open Source Contributions
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/volcengine/verl">verl</a>
+      year: 2024 - Present
+      description: Active contributor to the RL framework for LLMs
+    - title: <a href="https://github.com/Oneflow-Inc/oneflow">OneFlow</a>
+      year: 2024
+      description: Extended framework compatibility to diverse hardware accelerators
