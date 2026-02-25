@@ -20,9 +20,6 @@
             {{- site.title -}}
           {% endif %}
         </a>
-      {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% include social.liquid %}</div>
       {% endif %}
       <!-- Navbar Toggle -->
       <button
@@ -133,6 +130,11 @@
                 <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
                 <i class="ti ti-sun-filled" id="light-toggle-light"></i>
               </button>
+            </li>
+          {% endif %}
+          {% if site.enable_navbar_social %}
+            <li class="nav-item navbar-social">
+              {% include social.liquid %}
             </li>
           {% endif %}
         </ul>
