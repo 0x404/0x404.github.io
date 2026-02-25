@@ -2,96 +2,86 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Qunhong Zeng
+    - name: Location
+      value: Beijing, China
+    - name: Email
+      value: qunhongzeng@gmail.com
     - name: Languages
-      value: English, German
+      value: Chinese, English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.S. in Computer Science
+      institution: Beijing Institute of Technology, Beijing, China
+      year: 2023 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - Advisor Prof. Yuxia Zhang
+        - Focus on AI for Software Engineering (AI4SE)
+        - Research on reinforcement learning for LLMs' reasoning capabilities
+    - title: B.S. in Computer Science
+      institution: Beijing Institute of Technology, Beijing, China
+      year: 2019 - 2023
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Top Talent Intern
+      institution: MiniMax
+      year: 2025.8 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Working on foundation model's coding capabilities
+    - title: Beidou Program Intern
+      institution: Meituan
+      year: 2025.6 - 2025.7
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Researched multi-turn conversational RL to enhance LLM's dialogue capabilities
+    - title: MarsCode CodeAI Intern
+      institution: ByteDance
+      year: 2024.9 - 2025.6
       description:
+        - Conducted research on automated commit message generation and quality evaluation
+        - Research accepted for publication in ICSE 2026
+        - Researched RL approaches to enhance LLM's reasoning capabilities
+    - title: Framework Intern
+      institution: Oneflow
+      year: 2024.3 - 2024.9
+      description:
+        - Extended deep learning framework compatibility to diverse hardware accelerators
+        - Implemented Ascend CANN/AscendC-based operators
+        - Managed framework infrastructure including Docker, CI/CD, and cross-platform compilation
+    - title: HD-Map Backend Intern
+      institution: Momenta
+      year: 2022.9 - 2023.1
+      description:
+        - Engineered high-performance Python/C++ extensions for HD maps algorithm library
+        - Delivered 20x performance improvement
+    - title: AI-Lab Intern
+      institution: ByteDance
+      year: 2021.12 - 2022.6
+      description:
+        - Contributed to ByteDance's machine learning platform development
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Research Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: AI for Software Engineering (AI4SE)
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Automated code generation and commit message generation
+        - Code quality evaluation and classification
+    - title: Machine Learning Systems
       items:
-        - Description 1.
-        - Description 2.
+        - Reinforcement learning for LLMs
+        - Deep learning framework development
+        - Hardware accelerator optimization
 
-- title: Other Interests
-  type: list
+- title: Open Source Contributions
+  type: time_table
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: <a href="https://github.com/volcengine/verl">verl</a>
+      year: 2024 - Present
+      description: Active contributor to the RL framework for LLMs
+    - title: <a href="https://github.com/Oneflow-Inc/oneflow">OneFlow</a>
+      year: 2024
+      description: Extended framework compatibility to diverse hardware accelerators

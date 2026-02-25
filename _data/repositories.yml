@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - 0x404
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - 0x404/awesome-git-commit
+  - 0x404/conventional-commit-classification
+  - volcengine/verl
+  - Oneflow-Inc/oneflow
