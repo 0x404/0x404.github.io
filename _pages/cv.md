@@ -4,5 +4,5 @@ permalink: /assets/pdf/CV.pdf
 title: cv
 nav: false
 nav_order: 5
-cv_pdf: example_pdf.pdf # you can also use external links here
+# cv_pdf: CV.pdf # uncomment and update when ready to publish your CV
 ---
