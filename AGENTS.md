@@ -26,4 +26,4 @@ Ruby 3.2, ImageMagick, inotify-tools, Node.js, Python 3 + nbconvert. These are i
 
 - The `jekyll-terser` gem is sourced from a **git repo** (`https://github.com/RobertoJBeltran/jekyll-terser.git`), not RubyGems. `bundle install` needs network access to fetch it.
 - `nbconvert` is installed via `pip install --break-system-packages nbconvert` (user-level) because the system Python is managed by Ubuntu. The binary lands in `~/.local/bin` — ensure this is on `PATH`.
-- The site's available pages depend on files in `_pages/`. The default setup includes: `/` (about), `/publications/`, `/news/`, `/repositories/`, and `/assets/pdf/CV.pdf` (CV). Blog and projects pages may not exist unless added.
+- The site's available pages depend on files in `_pages/`. The default setup includes: `/` (about), `/publications/`, `/news/`, and `/repositories/`. Blog and projects pages may not exist unless added.

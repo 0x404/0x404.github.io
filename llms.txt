@@ -1,0 +1,43 @@
+# Qunhong Zeng
+
+> Personal website of Qunhong Zeng, a Research Engineer at MiniMax working on post-training LLMs for agentic coding and AI for Software Engineering.
+
+Research Engineer at MiniMax, based in Beijing, China.
+
+- Website: https://0x404.github.io/
+- Email: qunhongzeng@gmail.com
+- GitHub: https://github.com/0x404
+
+## About
+
+I work on post-training large language models for agentic coding.
+
+I received my M.Eng. (2026) and B.Eng. (2023) from the School of Computer Science at Beijing Institute of Technology, where I was advised by Prof. Yuxia Zhang and worked on AI for Software Engineering (AI4SE).
+
+Please feel free to contact me if you’re interested in having a discussion :)
+
+## Selected publications
+
+- [Evaluating Generated Commit Messages with Large Language Models](https://arxiv.org/pdf/2507.10906). Qunhong Zeng, Yuxia Zhang, Zexiong Ma, et al. (8 authors). ICSE 2026. Code: https://github.com/0x404/awesome-git-commit
+- [Enhancing Issue Localization Agent with Tool-Interactive Training](https://arxiv.org/pdf/2508.03012). Zexiong Ma, Chao Peng, Qunhong Zeng, Pengfei Gao, Yanzhen Zou, Bing Xie. ICSE 2026. Code: https://github.com/Mizersy/RepoDeepSearch
+- [SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks](https://arxiv.org/pdf/2602.12670). Xiangyi Li, Yimin Liu, Wenbo Chen, et al. (78 authors, including Qunhong Zeng). NeurIPS 2026. Code: https://github.com/benchflow-ai/skillsbench
+- [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](https://arxiv.org/pdf/2605.26494). Aili Chen, Aonian Li, Baichuan Zhou, et al. (218 authors, including Qunhong Zeng). Technical Report, 2026.
+- [OctoBench: Benchmarking Scaffold-Aware Instruction Following in Repository-Grounded Agentic Coding](https://aclanthology.org/2026.acl-long.269/). Deming Ding, Shichun Liu, Enhui Yang, et al. (15 authors, including Qunhong Zeng). ACL 2026. Code: https://github.com/MiniMax-AI/mini-vela
+- [A First Look at Conventional Commits Classification](https://www.computer.org/csdl/proceedings-article/icse/2025/056900a127/215aWxIcs3m). Qunhong Zeng, Yuxia Zhang, Zhiqing Qiu, Hui Liu. ICSE 2025. Code: https://github.com/0x404/conventional-commit-classification
+
+## Experience
+
+- MiniMax, Research Engineer (Jul 2025 – Present)
+  - Work on data infrastructure and SFT/RL data pipelines for coding post-training.
+  - Contributed to the agentic coding capabilities of the [MiniMax-M2](https://github.com/MiniMax-AI/MiniMax-M2) and [MiniMax-M3](https://github.com/MiniMax-AI/MiniMax-M3) series.
+- Meituan, Beidou Program Intern (Jun 2025 – Jul 2025)
+  - Researched multi-turn conversational RL to enhance LLM's dialogue capabilities.
+- ByteDance, Research Intern, Trae (Aug 2024 – Jun 2025)
+  - Worked on LLM post-training for [Trae](https://www.trae.ai), including code editing and issue localization.
+  - Contributed to the open-source RL framework [verl](https://github.com/verl-project/verl).
+- Oneflow, Framework Intern (Mar 2024 – Sep 2024)
+  - Added Ascend NPU support to the [OneFlow](https://github.com/Oneflow-Inc/oneflow) deep learning framework.
+- Momenta, HD-Map Backend Intern (Sep 2022 – Jan 2023)
+  - Built Python/C++ extensions for the HD-map library, with a 20x speedup.
+- ByteDance, AI-Lab Intern (Dec 2021 – Jun 2022)
+  - Worked on ByteDance's machine learning platform.
