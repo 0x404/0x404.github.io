@@ -2,19 +2,33 @@
 layout: about
 title: about
 permalink: /
-# subtitle: <a href='https://english.bit.edu.cn'>Beijing Institute of Technology</a>.
+subtitle: Research Engineer at <a href="https://www.minimax.io">MiniMax</a>
 
-profile:
-  align: center
-  image: profile.jpg
-  image_circular: false # crops the image to make it circular
-  image_width: 150px
-  more_info: >
-    <p>Beijing, China</p>
-    <p><a href="mailto:qunhongzeng@gmail.com">qunhongzeng@gmail.com</a></p>
+# Structured data (JSON-LD) for search engines; keep in sync with the subtitle and bio.
+person:
+  job_title: Research Engineer
+  works_for:
+    name: MiniMax
+    url: https://www.minimax.io
+  alumni_of:
+    name: Beijing Institute of Technology
+    url: https://english.bit.edu.cn
+  knows_about:
+    - Large language models
+    - LLM post-training
+    - Agentic coding
+    - Reinforcement learning
+    - AI for Software Engineering
+
+location: Beijing, China
+links:
+  - title: Email
+    url: mailto:qunhongzeng@gmail.com
+  - title: GitHub
+    url: https://github.com/0x404
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
@@ -29,46 +43,42 @@ latest_posts:
 experiences:
   enabled: true
   content:
-    - title: Top Talent Intern
-      date: 2025.7 - now
+    - title: Research Engineer
+      date: Jul 2025 – Present
       company: MiniMax
       description_list:
-        - Core contributor to [MiniMax-M2.5](https://github.com/MiniMax-AI/MiniMax-M2.5)'s agentic coding capabilities.
-        - Core contributor to improving the SWE/MSWE coding and review capabilities of [MiniMax-M2.1](https://github.com/MiniMax-AI/MiniMax-M2.1). Created the swe-review benchmark, to be open-sourced soon.
-        - Core contributor to [MiniMax-M2](https://github.com/MiniMax-AI/MiniMax-M2)'s multilingual coding capabilities. Benefiting from environment scaling and scaffold scaling, MiniMax-M2 shows SOTA performance on Multi-SWE-bench and SWE-bench multilingual among all open-source models.
+        - Work on data infrastructure and SFT/RL data pipelines for coding post-training.
+        - Contributed to the agentic coding capabilities of the [MiniMax-M2](https://github.com/MiniMax-AI/MiniMax-M2) and [MiniMax-M3](https://github.com/MiniMax-AI/MiniMax-M3) series.
     - title: Beidou Program Intern
-      date: 2025.6 - 2025.7
+      date: Jun 2025 – Jul 2025
       company: Meituan
       description_list:
         - Researched multi-turn conversational RL to enhance LLM's dialogue capabilities.
-    - title: Trae CodeAI Intern
-      date: 2024.9 - 2025.6
+    - title: Research Intern, Trae
+      date: Aug 2024 – Jun 2025
       company: ByteDance
       description_list:
-        - Conducted research on automated commit message generation and quality evaluation, with findings accepted for publication in the research track of ICSE 2026.
-        - Researched RL approaches to enhance LLM's reasoning capabilities, such as mathematical reasoning, competitive programming contest test generation, and tool-interactive reasoning. Collaborated with [Zexiong Ma](https://scholar.google.com/citations?user=jmZifrkAAAAJ&hl=en) and mentored by Bo Jiang.
+        - Worked on LLM post-training for [Trae](https://www.trae.ai), including code editing and issue localization.
+        - Contributed to the open-source RL framework [verl](https://github.com/verl-project/verl).
     - title: Framework Intern
-      date: 2024.3 - 2024.9
+      date: Mar 2024 – Sep 2024
       company: Oneflow
       description_list:
-        - Extended deep learning framework [oneflow](https://github.com/Oneflow-Inc/oneflow) compatibility beyond CUDA to diverse hardware accelerators (NPU/XPU), implementing Ascend CANN/AscendC-based operators that enabled end-to-end ResNet, GPT2, and Llama model inference/training on Ascend chips.
-        - Managed framework infrastructure including Docker containerization, CI/CD, cross-platform compilation, and Manylinux-compliant Python/C++ extension packaging.
+        - Added Ascend NPU support to the [OneFlow](https://github.com/Oneflow-Inc/oneflow) deep learning framework.
     - title: HD-Map Backend Intern
-      date: 2022.9 - 2023.1
+      date: Sep 2022 – Jan 2023
       company: Momenta
       description_list:
-        - Engineered high-performance Python/C++ extensions for HD maps algorithm library, delivering 20x performance improvement.
+        - Built Python/C++ extensions for the HD-map library, with a 20x speedup.
     - title: AI-Lab Intern
-      date: 2021.12 - 2022.6
+      date: Dec 2021 – Jun 2022
       company: ByteDance
       description_list:
-        - Contributed to ByteDance's machine learning platform development as part of the engineering team.
+        - Worked on ByteDance's machine learning platform.
 ---
 
-I am a final-year graduate student at the School of Computer Science and Technology at [Beijing Institute of Technology](https://english.bit.edu.cn), advised by [Prof. Yuxia Zhang](https://yuxiazhang-bit.github.io/index.html). Prior to this, I received my B.S. degree in Computer Science from the same university in 2023.
+I work on post-training large language models for agentic coding.
 
-My research primarily focuses on AI for Software Engineering (AI4SE). I am currently working at [MiniMax AI](https://www.minimax.io), where I focus on improving foundation models' agentic coding capabilities and scaling verifiable environments for agentic post-training. My recent work centers on SWE tasks (Multi-SWE-bench, SWE-bench multilingual, etc.).
-
-I am also interested in MLSys and enjoy building scalable systems, with experience in building RL infrastructure (e.g., [verl](https://github.com/volcengine/verl)) and scaling agent scaffolds.
+I received my M.Eng. (2026) and B.Eng. (2023) from the School of Computer Science at [Beijing Institute of Technology](https://english.bit.edu.cn), where I was advised by [Prof. Yuxia Zhang](https://yuxiazhang-bit.github.io/index.html) and worked on AI for Software Engineering (AI4SE).
 
 Please feel free to contact me if you're interested in having a discussion :)

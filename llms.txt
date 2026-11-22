@@ -1,0 +1,32 @@
+---
+permalink: /llms.txt
+---
+{%- assign about = site.pages | where: 'permalink', '/' | first -%}
+{%- capture author_name %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture -%}
+# {{ author_name }}
+
+> {{ site.description | strip }}
+
+{{ about.subtitle | strip_html }}{% if about.location %}, based in {{ about.location }}{% endif %}.
+
+- Website: {{ '/' | absolute_url }}
+{%- for link in about.links %}
+- {{ link.title }}: {{ link.url | remove_first: 'mailto:' }}
+{%- endfor %}
+
+## About
+
+{{ about.content | markdownify | strip_html | strip }}
+
+## Selected publications
+
+{% capture publications %}{% bibliography --group_by none --query @*[selected=true]* --template bib_llms %}{% endcapture -%}
+{{ publications | strip_html | strip }}
+
+## Experience
+{% for experience in about.experiences.content %}
+- {{ experience.company }}, {{ experience.title }} ({{ experience.date }})
+{%- for item in experience.description_list %}
+  - {{ item }}
+{%- endfor %}
+{%- endfor %}

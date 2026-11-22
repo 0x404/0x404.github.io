@@ -46,9 +46,9 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-12{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <h3 class="title">{{ entry.title }}</h3>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -56,6 +56,24 @@
       {% assign author_array_limit = author_array_size %}
       {% if site.max_author_limit and author_array_size > site.max_author_limit %}
         {% assign author_array_limit = site.max_author_limit %}
+      {% endif %}
+
+      {% comment %} Find the site owner so a truncated author list can still show them. {% endcomment %}
+      {% assign self_author_index = -1 %}
+      {% if author_array_limit < author_array_size %}
+        {%- for author in entry.author_array -%}
+          {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+          {% if site.scholar.last_name contains author_last_name %}
+            {% if site.scholar.first_name contains author.first %}
+              {% assign self_author_index = forloop.index0 %}
+              {% break %}
+            {% endif %}
+          {% endif %}
+        {%- endfor -%}
+        {% comment %} The owner takes one of the visible slots so the list never exceeds max_author_limit names. {% endcomment %}
+        {% if self_author_index >= author_array_limit %}
+          {% assign author_array_limit = author_array_limit | minus: 1 %}
+        {% endif %}
       {% endif %}
 
       {%- for author in entry.author_array limit: author_array_limit -%}
@@ -101,7 +119,23 @@
           {% endif %}
         {%- endif -%}
       {% endfor %}
+      {%- assign self_shown_separately = false -%}
+      {%- if self_author_index >= author_array_limit -%}
+        {%- assign self_shown_separately = true -%}
+        {%- assign self_author = entry.author_array[self_author_index] -%}
+        {%- assign self_last_html = self_author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+        {%- assign last_author_index = author_array_size | minus: 1 -%}
+        {%- if self_author_index > author_array_limit -%}, …{%- endif -%}
+        {%- if self_author_index == last_author_index %}, and {% else %}, {% endif -%}
+        <em>
+          {{- self_author.first }}
+          {{ self_last_html -}}
+        </em>
+      {%- endif -%}
       {%- assign more_authors = author_array_size | minus: author_array_limit -%}
+      {%- if self_shown_separately -%}
+        {%- assign more_authors = more_authors | minus: 1 -%}
+      {%- endif -%}
 
       {%- assign more_authors_hide = more_authors | append: ' more author' -%}
       {% if more_authors > 0 %}
@@ -110,10 +144,14 @@
         {%- endif -%}
         {% assign more_authors_show = '' %}
         {%- for author in entry.author_array offset: author_array_limit -%}
-          {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
-          {% unless forloop.last %}
-            {% assign more_authors_show = more_authors_show | append: ', ' %}
-          {% endunless %}
+          {%- assign author_index = forloop.index0 | plus: author_array_limit -%}
+          {%- if self_shown_separately and author_index == self_author_index -%}
+            {%- continue -%}
+          {%- endif -%}
+          {%- if more_authors_show != '' -%}
+            {%- assign more_authors_show = more_authors_show | append: ', ' -%}
+          {%- endif -%}
+          {%- assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last -%}
         {%- endfor -%}
         {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
         , and
@@ -177,13 +215,19 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {% if entry.venue %}
+      {% capture periodical %}<em>{{ entry.venue }}</em>{% endcapture %}
+    {% else %}
+      {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {% endif %}
     <div class="periodical">
       {{ periodical | strip }}
     </div>
-    <div class="periodical">
-      {{ entry.note | strip }}
-    </div>
+    {% if entry.note %}
+      <div class="periodical">
+        {{ entry.note | strip }}
+      </div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">

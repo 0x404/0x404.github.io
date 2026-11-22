@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Research publications in AI for Software Engineering, focusing on code generation, commit message analysis, and LLM reasoning capabilities.
+description: Publications on agentic coding, reinforcement learning for LLMs, and AI for Software Engineering.
 nav: false
 nav_order: 2
 ---

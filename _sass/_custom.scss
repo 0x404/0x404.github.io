@@ -1,0 +1,349 @@
+/*******************************************************************************
+ * Site typography and page layout (overrides theme defaults)
+ ******************************************************************************/
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../fonts/jetbrains-mono-latin.woff2") format("woff2");
+}
+
+$mono-font-stack: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+body {
+  font-family: $mono-font-stack;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.75;
+  font-variant-numeric: lining-nums tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn,
+.navbar,
+.dropdown-item,
+code,
+kbd,
+pre,
+samp {
+  font-family: $mono-font-stack;
+}
+
+::selection {
+  background: rgba($accent-color, 0.18);
+}
+
+// Links are marked by colour alone, with no underline even on hover.
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  transition:
+    color 0.15s ease,
+    opacity 0.15s ease;
+
+  &:hover {
+    color: var(--global-hover-color);
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+// Navbar: a quiet bar with the theme toggle, scrolling away with the page
+
+#navbar {
+  position: static;
+  border-bottom: 0;
+  background-color: transparent;
+  opacity: 1;
+  padding-top: 1.25rem;
+  padding-bottom: 0;
+
+  .navbar-brand {
+    font-size: 1rem;
+    font-weight: 700 !important;
+
+    .font-weight-bold {
+      font-weight: inherit !important;
+    }
+  }
+
+  #light-toggle {
+    color: var(--global-text-color-light);
+    font-size: 1.1rem;
+    line-height: 1;
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+
+    i {
+      padding: 0 !important;
+    }
+  }
+}
+
+.post-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+// Home page
+
+.home {
+  .home-header {
+    margin: 1rem 0 2.5rem;
+  }
+
+  .home-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+  }
+
+  .home-role {
+    margin-bottom: 0.4rem;
+  }
+
+  .home-links {
+    font-size: 13px;
+    color: var(--global-text-color-light);
+    margin-bottom: 0;
+
+    span {
+      color: inherit;
+    }
+
+    .home-sep {
+      margin: 0 0.55em;
+      opacity: 0.6;
+    }
+  }
+
+  .home-bio p {
+    margin-bottom: 1rem;
+  }
+
+  h2.home-section {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--global-text-color);
+    margin: 3rem 0 1.25rem;
+
+    &::before {
+      content: "## ";
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+// Publications
+
+.publications {
+  margin-top: 0;
+
+  ol.bibliography li {
+    margin-bottom: 1.5rem;
+
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+
+      > .col-12 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .title {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin: 0 0 0.2rem;
+    }
+
+    .author {
+      color: var(--global-text-color-light);
+      font-size: 13px;
+      line-height: 1.55;
+      margin-bottom: 0.15rem;
+
+      a {
+        color: inherit;
+        border-bottom: 0;
+      }
+
+      > em {
+        color: var(--global-text-color);
+        font-style: normal;
+        font-weight: 600;
+        border-bottom: 0;
+      }
+
+      > span.more-authors {
+        cursor: pointer;
+        color: var(--global-theme-color);
+        border-bottom: 0;
+      }
+    }
+
+    .periodical,
+    .links {
+      display: inline;
+      font-size: 13px;
+    }
+
+    .periodical,
+    .periodical em {
+      color: var(--global-text-color-light);
+      font-style: normal;
+    }
+
+    .links a.btn {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      background: none;
+      font: inherit;
+      line-height: inherit;
+      text-transform: none;
+      vertical-align: baseline;
+      color: var(--global-theme-color);
+
+      // The whitespace before each link already supplies the gap on the left.
+      &::before {
+        content: "·";
+        display: inline-block;
+        margin-right: 0.6em;
+        color: var(--global-text-color-light);
+      }
+    }
+  }
+}
+
+// Experience
+
+.experience-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience {
+  margin-bottom: 1.5rem;
+}
+
+.experience-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.experience-title {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.experience-company {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-right: 0.5rem;
+}
+
+.experience-role {
+  color: var(--global-text-color-light);
+}
+
+.experience-date {
+  font-size: 13px;
+  margin-left: auto;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+}
+
+.experience-bullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13.5px;
+  line-height: 1.6;
+
+  li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-bottom: 0.15rem;
+
+    &::before {
+      content: "-";
+      position: absolute;
+      left: 0;
+      color: var(--global-text-color-light);
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .experience-date {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+
+  .home .home-header {
+    margin-top: 0;
+  }
+}
+
+// Footer
+
+footer.sticky-bottom {
+  border-top: 0;
+  padding: 3rem 0 2.5rem;
+
+  .container {
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--global-text-color-light);
+    text-align: left;
+
+    &::before {
+      content: "";
+      display: block;
+      border-top: 1px solid var(--global-divider-color);
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}

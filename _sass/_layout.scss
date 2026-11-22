@@ -51,31 +51,3 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
-
-/* Enhanced experiences styling */
-.publications.experience-date {
-  color: var(--global-text-color-light, #888);
-  font-weight: normal;
-  font-style: italic;
-  font-size: 0.9em;
-}
-
-.experience-description ul.experience-bullets {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding-left: 1.5rem;
-}
-
-.experience-description ul.experience-bullets li {
-  margin-bottom: 0.3rem;
-}
-
-.experience-description a {
-  color: var(--global-theme-color);
-  text-decoration: none;
-  border-bottom: 1px dashed var(--global-theme-color);
-}
-
-.experience-description a:hover {
-  border-bottom: 1px solid var(--global-theme-color);
-}
