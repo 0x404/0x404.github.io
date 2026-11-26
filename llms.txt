@@ -38,6 +38,6 @@ Please feel free to contact me if you’re interested in having a discussion :)
 - Oneflow, Framework Intern (Mar 2024 – Sep 2024)
   - Added Ascend NPU support to the [OneFlow](https://github.com/Oneflow-Inc/oneflow) deep learning framework.
 - Momenta, HD-Map Backend Intern (Sep 2022 – Jan 2023)
-  - Built Python/C++ extensions for the HD-map library, with a 20x speedup.
+  - Built Python/C++ extensions for the HD-map library.
 - ByteDance, AI-Lab Intern (Dec 2021 – Jun 2022)
   - Worked on ByteDance's machine learning platform.
