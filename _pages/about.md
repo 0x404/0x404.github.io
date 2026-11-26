@@ -69,7 +69,7 @@ experiences:
       date: Sep 2022 – Jan 2023
       company: Momenta
       description_list:
-        - Built Python/C++ extensions for the HD-map library, with a 20x speedup.
+        - Built Python/C++ extensions for the HD-map library.
     - title: AI-Lab Intern
       date: Dec 2021 – Jun 2022
       company: ByteDance
@@ -77,7 +77,7 @@ experiences:
         - Worked on ByteDance's machine learning platform.
 ---
 
-I work on post-training large language models for agentic coding.
+I work on post-training LLM for agentic coding.
 
 I received my M.Eng. (2026) and B.Eng. (2023) from the School of Computer Science at [Beijing Institute of Technology](https://english.bit.edu.cn), where I was advised by [Prof. Yuxia Zhang](https://yuxiazhang-bit.github.io/index.html) and worked on AI for Software Engineering (AI4SE).
 

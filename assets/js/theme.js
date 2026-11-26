@@ -1,11 +1,7 @@
 // Has to be in the head tag, otherwise a flicker effect will occur.
 
-// Flip between light and dark. Picking the theme the OS already prefers stores "system",
-// so the site keeps following later OS changes instead of pinning that theme.
 let toggleThemeSetting = () => {
-  let nextTheme = determineComputedTheme() == "dark" ? "light" : "dark";
-  let systemTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-  setThemeSetting(nextTheme == systemTheme ? "system" : nextTheme);
+  setThemeSetting(determineComputedTheme() == "dark" ? "light" : "dark");
 };
 
 // Change the theme setting and apply the theme.
@@ -247,30 +243,16 @@ let transTheme = () => {
   }, 500);
 };
 
-// Determine the expected state of the theme toggle, which can be "dark", "light", or
-// "system". Default is "system".
+// Determine the theme setting, which can be "dark" or "light". Default is "dark".
+// Anything other than "light" counts as dark, including the "system" value that earlier
+// versions of this script saved in localStorage on every visit.
 let determineThemeSetting = () => {
-  let themeSetting = localStorage.getItem("theme");
-  if (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") {
-    themeSetting = "system";
-  }
-  return themeSetting;
+  return localStorage.getItem("theme") == "light" ? "light" : "dark";
 };
 
-// Determine the computed theme, which can be "dark" or "light". If the theme setting is
-// "system", the computed theme is determined based on the user's system preference.
+// Determine the computed theme, which can be "dark" or "light".
 let determineComputedTheme = () => {
-  let themeSetting = determineThemeSetting();
-  if (themeSetting == "system") {
-    const userPref = window.matchMedia;
-    if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    } else {
-      return "light";
-    }
-  } else {
-    return themeSetting;
-  }
+  return determineThemeSetting();
 };
 
 let initTheme = () => {
@@ -285,10 +267,5 @@ let initTheme = () => {
     mode_toggle.addEventListener("click", function () {
       toggleThemeSetting();
     });
-  });
-
-  // Add event listener to the system theme preference change.
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches }) => {
-    applyTheme();
   });
 };
